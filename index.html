@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320">
+    <title>Document</title>
+    <!--main_css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--swiper_css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <!--fade_js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
+    <script src="js/jquery-1.12.3.js"></script>
+    <!--tap-->
+    
+    <script src="js/script.js"></script>
+    <script>AOS.init();</script>
+    <!-- Demo styles -->
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style>
+		.swiper {
+			height: 600px;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+            background-position: center center;
+            background-repeat: no-repeat;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.swiper {
+			margin-right: auto;
+		}
+		.banner1 { 
+			background-color: #FDF0FB; 
+		}
+
+		.banner2 {
+			background-image: url(img/main/mainbanner_new.png);
+		}
+
+
+	</style>
+</head>
+<body>
+    <!--header-->
+    <div id="header">
+        <h1 class="logo"><img src="img/main/bellca_logo.png" alt=""></h1>
+        <ul class="gnb">
+            <li><a href="#">BELLCA</a></li>
+            <li><a href="#">ODEURMOI</a></li>
+            <li><a href="pinkrosa.html">PINKLOSA</a></li>
+        </ul>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide banner1">
+                <div class="img_box">
+                    <img src="img/main/pinkrosa_banner.png" alt="">
+                </div>
+                <div class="text_box">
+                    <h5 >PINKLOSA</h5>
+                    <h2>촉촉하고 부드럽게 저자극 필링
+                        <br><span>핑크로사 소프트 필링젤</span>
+                    </h2>
+                    <div class="banner_btn"><a href="#">
+                            <p class="btn">자세히 보기</p>
+                        </a></div>
+                </div>
+            </div>
+    
+            <div class="swiper-slide banner2">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        			/*고치기*/autoplay: {//자동재생
+                delay: 2800,//슬라이드 넘어가는 시간
+                disableOnInteraction: false,
+            },
+            loop: true,//반복
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+    </script>
+    <!--container_s-->
+    <div id="container">
+        <div class="inner"><!--inner_s-->
+            <div class="hashtags-wrap"><!--hashtags_S-->
+                <ul class="hashtags">
+                    <li><a href="#" class="hash">
+                            #PINKROSA
+                        </a></li>
+                    <li><a href="#" class="hash">
+                            #신제품
+                        </a></li>
+                    <li><a href="#" class="hash">
+                            #여성필수템
+                        </a></li>
+                </ul>
+                <div class="img_wrap">
+                    <a href="#"><img src="img/main/pinkrosa_pure.png" alt=""></a>
+                </div>
+            </div><!--hashtags_e-->
+        </div><!--inner_e-->
+        <!--best_seller-->
+        <div class="swipers"
+        data-aos="fade-left" data-aos-duration="1000" class="aos-init aos-animate"><!--swiper_S-->
+            <h2 class="title">
+                BEST SELLER
+            </h2>
+            <P class="sub_title">
+                가장인기있는 상품을 만나보세요!
+            </P>
+            <ul class="best-seller">
+                <li>
+                    <div class="posi1">
+                        <div class="jb-a buttons position1">
+                            <a href="#"><img src="img/main/bellca_footmist.png" alt="" class="jb-b"></a>
+                            <a href="#"><img src="img/main/bellca_footmist_hover.png" alt="" class="jb-c"></a>
+                        </div>
+                        <div class="buttons position1">
+                            <a href="#"><img src="img/main/main_icon_like.png" alt=""></a>
+                            <a href="#"><img src="img/main/main_icon_carticon.png" alt=""></a>
+                        </div>
+                       
+                    </div>
+                    <h4 class="h4_title">벨카
+                        <br>발하다 쿨링 풋미스트
+                        <br><span class="h4_sub">20.000 </span>
+                        <span class="h4_red"> &nbsp; 12,000</span>
+                    </h4>
+                </li>
+                <li>
+                    <div class="posi1">
+                        <div class="jb-a buttons position1">
+                            <a href="#"><img src="img/main/bellca_powder.png" alt="" class="jb-b"></a>
+                            <a href="#"><img src="img/main/bellca_powder_hover.png" alt="" class="jb-c"></a>
+                        </div>
+                        <div class="buttons position1">
+                            <a href="#"><img src="img/main/main_icon_like.png" alt=""></a>
+                            <a href="#"><img src="img/main/main_icon_carticon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h4 class="h4_title">벨카
+                        <br>헤어퀵 노세범 파우더
+                        <br><span class="h4_sub">15,200 </span>
+                        <span class="h4_red"> &nbsp; 12,100</span>
+                    </h4>
+                </li>
+                <li>
+                    <div class="posi1">
+                        <div class="jb-a buttons position1">
+                            <a href="#"><img src="img/main/bellca_footsoap.png" alt="" class="jb-b"></a>
+                            <a href="#"><img src="img/main/bellca_footsoap_hover.png" alt="" class="jb-c"></a>
+                        </div>
+                        <div class="buttons position1">
+                            <a href="#"><img src="img/main/main_icon_like.png" alt=""></a>
+                            <a href="#"><img src="img/main/main_icon_carticon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h4 class="h4_title">벨카
+                        <br>힐링 풋 워시 발비누
+                        <br><span class="h4_sub">23.000 </span>
+                        <span class="h4_red"> &nbsp; 15,900</span>
+                    </h4>
+                </li>
+                <li>
+                    <div class="posi1">
+                        <div class="jb-a buttons position1">
+                            <a href="#"><img src="img/main/bellca_cream.png" alt="" class="jb-b"></a>
+                            <a href="#"><img src="img/main/bellca_cream_hover.png" alt="" class="jb-c"></a>
+                        </div>
+                        <div class="buttons position1">
+                            <a href="#"><img src="img/main/main_icon_like.png" alt=""></a>
+                            <a href="#"><img src="img/main/main_icon_carticon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h4 class="h4_title">벨카
+                        <br>하얀거짓말 광채톤업크림
+                        <br><span class="h4_sub">58.000 </span>
+                        <span class="h4_red"> &nbsp; 29,000</span>
+                    </h4>
+                </li>
+                <li>
+                    <div class="posi1">
+                        <div class="jb-a buttons position1">
+                            <a href="#"><img src="img/main/odeurmoi_hand.png" alt="" class="jb-b"></a>
+                            <a href="#"><img src="img/main/odeurmoi_hand_hover.png" alt="" class="jb-c"></a>
+                        </div>
+                        <div class="buttons position1">
+                            <a href="#"><img src="img/main/main_icon_like.png" alt=""></a>
+                            <a href="#"><img src="img/main/main_icon_carticon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h4 class="h4_title">오드모아
+                        <br>언센티브 대용량 핸드밤
+                        <br><span class="h4_sub">29.000 </span>
+                        <span class="h4_red"> &nbsp; 17,500</span>
+                    </h4>
+                </li>
+                <li>
+                    <div class="posi1">
+                        <div class="jb-a buttons position1">
+                            <a href="#"><img src="img/main/pinkrosa_soap.png" alt="" class="jb-b"></a>
+                            <a href="#"><img src="img/main/pinkrosa_soap_hover.png" alt="" class="jb-c"></a>
+                        </div>
+                        <div class="buttons position1">
+                            <a href="#"><img src="img/main/main_icon_like.png" alt=""></a>
+                            <a href="#"><img src="img/main/main_icon_carticon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <h4 class="h4_title">핑크로사
+                        <br>올인원 스크럽 솝
+                        <br><span class="h4_sub">25.000 </span>
+                        <span class="h4_red"> &nbsp; 17,900</span>
+                    </h4>
+                </li>
+            </ul>
+        </div><!--swiper_E-->
+    </div><!--container_e-->
+<h2 class="main_title">
+    BEST REVIEW
+</h2>
+<div id="container_review">
+    <ul class="review">
+        <li class="posi">
+            <div class="jb-a">
+                <a href="candle.html"><img src="img/main/pinkrosa_feeling.png" alt="" class="jb-b"></a>
+                <a href="candle.html"><img src="img/main/pinkrosa_feeling_hover.png" alt="" class="jb-c"></a>
+            </div>
+            <h4 class="review_title"><span class="brand_title">PINKROSA</span>
+                <br>소프트 필링크림
+            </h4>
+            <h6>저자극으로 얼굴에도 가능한 필링</h6>
+        </li>
+        <li class="posi">
+            <div class="jb-a">
+                <a href="candle.html"><img src="img/main/pinkrosa_inner.png" alt="" class="jb-b"></a>
+                <a href="candle.html"><img src="img/main/pinkrosa_inner_hover.png" alt="" class="jb-c"></a>
+            </div>
+            <h4 class="review_title"><span class="brand_title">PINKROSA</span>
+                <br>이너퍼퓸[스윗허그]
+            </h4>
+            <h6>신경쓰이는 날엔 핑크로사 이너퍼퓸!</h6>
+        </li>
+        <li class="posi">
+            <div class="jb-a">
+                <a href="candle.html"><img src="img/main/odeurmoi_greek.png" alt="" class="jb-b"></a>
+                <a href="candle.html"><img src="img/main/odeurmoi_greek_hover.png" alt="" class="jb-c"></a>
+            </div>
+            <h4 class="review_title"><span class="brand_title">ODEURMOI</span>
+                <br>퍼퓸 그릭[러브레시피]
+            </h4>
+            <h6>발향과 지속력이 진짜 장난없어요</h6>
+        </li>
+        <li class="posi">
+            <div class="jb-a">
+                <a href="candle.html"><img src="img/main/drage_cream.png" alt="" class="jb-b"></a>
+                <a href="candle.html"><img src="img/main/drage_cream_hover.png" alt="" class="jb-c"></a>
+            </div>
+            <h4 class="review_title"><span class="brand_title">Dr.age</span>
+                <br>리얼딥모이스쳐크림
+            </h4>
+            <h6>수부지 스킨케어는 이 크림으로...</h6>
+        </li>
+        <li class="posi">
+            <div class="jb-a">
+                <a href="candle.html"><img src="img/main/bellca_footsoap.png" alt="" class="jb-b"></a>
+                <a href="candle.html"><img src="img/main/pinkrosa_soap_hover.png" alt="" class="jb-c"></a>
+            </div>
+            <h4 class="review_title"><span class="brand_title">BELLCA</span>
+                <br>힐링 풋 워시 발비누
+            </h4>
+            <h6>발향과 지속력이 진짜 장난없어요</h6>
+        </li>
+        <li class="posi">
+            <div class="jb-a">
+                <a href="candle.html"><img src="img/main/pinlrosa_pad.png" alt="" class="jb-b"></a>
+                <a href="candle.html"><img src="img/main/pinkrosa_pad_hover.png" alt="" class="jb-c"></a>
+            </div>
+            <h4 class="review_title"><span class="brand_title">PINKROSA</span>
+                <br>프로즌 수딩 겔패드
+            </h4>
+            <h6>수딩팩으로 열 진정과 쿨링감까지</h6>
+        </li>
+    </ul>
+</div>
+        
+<h2 class="main_title">
+    Monthly Special
+</h2>
+<section class="regular1 slider">
+    <div>
+			<div class="gallery">
+				<img src="img/main/event_new.png">
+			</div>
+    </div>
+    <div>
+      <div class="gallery">
+            <img src="img/main/event_3.png">
+			</div>
+    </div>
+    <div>
+      <div class="gallery">
+        <img src="img/main/event_5.png">
+			</div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+	$(".regular").slick({infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */         
+	slidesToShow: 1, /* 화면에 보여질 이미지 갯수*/        
+	slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */         
+	autoplay: true, /* 자동으로 다음이미지 보여주기 */         
+	arrows: true, /* 화살표 */         
+	dots:true, /* 아래점 */         
+	autoplaySpeed:1000,/* 다음이미지로 넘어갈 시간 */         
+	speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */         
+	pauseOnHover:true, /* 마우스 호버시 슬라이드 이동 멈춤 */        
+	//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/
+	
+	responsive: [ // 반응형 웹 구현 옵션
+        {  
+          breakpoint: 960, //화면 사이즈 960px
+          settings: {
+            slidesToShow: 3
+          } 
+        },
+        { 
+          breakpoint: 768, //화면 사이즈 768px
+          settings: {    
+            slidesToShow: 1
+          } 
+        }
+      ]
+	       });
+
+         $(".regular1").slick({infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */         
+	slidesToShow: 1, /* 화면에 보여질 이미지 갯수*/        
+	slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */         
+	/*고치기*/autoplay: {//자동재생
+        delay: 2800,//슬라이드 넘어가는 시간
+                disableOnInteraction: false,
+            },
+            loop: true,//반복
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },      
+	arrows: true, /* 화살표 */ 
+  prevArrow : $('.prevArrow'),  /*추가*/
+  nextArrow : $('.nextArrow'), /*추가*/        
+	dots:true, /* 아래점 */         
+	autoplaySpeed:1000,/* 다음이미지로 넘어갈 시간 */         
+	speed:1500 , /* 다음이미지로 넘겨질때 걸리는 시간 */         
+	pauseOnHover:true, /* 마우스 호버시 슬라이드 이동 멈춤 */        
+	//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/
+
+	       });
+
+    });
+</script>
+
+
+
+
+
+
+<div id="footer_wrap"><!--footer_wrap_s-->
+    <div class="footer">
+        <div class="left_box">
+            <div class="left_box_left">
+                <p>Customer center</p>
+                <p>051.418.8993</p>
+                <p>제휴문의</p>
+                <p class="email">ssi003@isamsung.kr</p>
+                <ul class="sns_icon">
+                    <li><a href="#"><img src="img/main/main_footer_insta.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/main/main_footer_youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/main/main_footer_ch.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/main/main_footer_talk.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="left_box_right">
+                <p>평일:09:00~18:00</p>
+                <p>점심시간:12:00~13:00</p>
+                <p>휴무:주말 및 공휴일</p>
+            </div>
+        </div>
+        <div class="right_box">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+            <p class="sub">
+                48059 부산광역시 해운대구 센텀동로 57 (우동) 부산디자인진흥원 5층 505-1호
+            </p>
+            <p>사이트 운영자: 주식회사 데즐</p>
+            <p>대표: 김시경</p>
+            <p>사업자 등록번호: 602-81-66559[사업자정보확인]</p>
+            <p>통신판매업 신고번호: 2021-부산해운대-0331 호</p>
+            <p>개인정보책임자: 박진현 (ssi003@isamsung.kr)</p>
+            <p class="strong">COPYRIGHT © 2018 BELLCA. ALL RIGHTS RESERVED</p>
+        </div>
+    </div><!--footer_wrap_e-->
+</div>
+</body>
+</html>
